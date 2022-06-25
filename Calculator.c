@@ -37,14 +37,14 @@ int main(){
     printf("Enter 8  for Square \n");
     printf("Enter 9  for Cube \n");
     printf("Enter 10 for Squareroot \n"); 
-    printf("Enter 11 for logarithm \n");
-    printf("Enter 12 for log_base_10 \n");
-    printf("Enter 13 for sine \n");
-    printf("Enter 14 for cosine \n");
-    printf("Enter 15 for tangent \n");
-    printf("Enter 16 for sineh \n");
-    printf("Enter 17 for cosineh \n");
-    printf("Enter 18 for tangenth \n\n");
+    printf("Enter 11 for Logarithm \n");
+    printf("Enter 12 for Log_base_10 \n");
+    printf("Enter 13 for Sine \n");
+    printf("Enter 14 for Cosine \n");
+    printf("Enter 15 for Tangent \n");
+    printf("Enter 16 for Sineh \n");
+    printf("Enter 17 for Cosineh \n");
+    printf("Enter 18 for Tangenth \n\n");
     
     while(1){    
     printf("\n\nEnter the operation you want to do: ");
