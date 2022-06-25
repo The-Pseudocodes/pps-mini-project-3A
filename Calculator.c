@@ -3,6 +3,7 @@
 #include<math.h>
 
 #define note "Please Enter the Valid Operation"
+#define PI 3.14159265
 void addition();
 void subtraction();
 void multiplication();
@@ -14,6 +15,13 @@ void square();
 void cube();
 void squareroot();
 void logarithm();
+void log_base_10();
+void sine();
+void cosine();
+void tangent();
+void sineh();
+void cosineh();
+void tangenth();
 
 int main(){
     printf("\t\tWelcome to the scientific calculator!!\n\n");
@@ -23,13 +31,20 @@ int main(){
     printf("Enter 2 for Subtraction \n");
     printf("Enter 3 for Multiplication \n");
     printf("Enter 4 for Division \n");
-    printf("Enter 5 for Modulus\n");
+    printf("Enter 5 for Modulus \n");
     printf("Enter 6 for Power \n");
     printf("Enter 7 for Factorial \n");
     printf("Enter 8  for Square \n");
     printf("Enter 9  for Cube \n");
-    printf("Enter 10 for Squareroot\n");
-    printf("Enter 11 for logarithm\n\n");
+    printf("Enter 10 for Squareroot \n"); 
+    printf("Enter 11 for logarithm \n");
+    printf("Enter 12 for log_base_10 \n");
+    printf("Enter 13 for sine \n");
+    printf("Enter 14 for cosine \n");
+    printf("Enter 15 for tangent \n");
+    printf("Enter 16 for sineh \n");
+    printf("Enter 17 for cosineh \n");
+    printf("Enter 18 for tangenth \n\n");
     
     while(1){    
     printf("\n\nEnter the operation you want to do: ");
@@ -70,6 +85,27 @@ int main(){
                     break;
                 case 11:
                     logarithm();
+                    break;
+                case 12:
+                    log_base_10();
+                    break;
+                case 13:
+                    sine();
+                    break;
+                case 14:
+                    cosine();
+                    break;
+                case 15:
+                    tangent();
+                    break;
+                case 16:
+                    sineh();
+                    break;
+                case 17:
+                    cosineh();
+                    break;
+                case 18:
+                    tangenth();
                     break;
                 case 0:
                     exit(0);
@@ -152,8 +188,57 @@ void squareroot(){
 }
 void logarithm(){
     double b;
-    printf("Enter a number to calculate its natural logarithm (base = e)\n");
+    printf("Enter the number you want the natural logarithm (base = e) of : ");
     scanf("%lf", &b);
     double l = log(b);
-    printf("Natural log of %.2lf = %lf\n",b,l);
+    printf("The natural log of %lf is %lf\n",b,l);
+}
+void log_base_10(){
+    double b;
+    printf("Enter the number you want the log base 10 of : ");
+    scanf("%lf",&b);
+    double l = log10(b);
+    printf("The logarithm base 10 of %lf is %lf\n",b,l);
+}
+void sine(){
+    double b;
+    printf("Enter the number you want the sine of : ");
+    scanf("%lf",b);
+    double s = sin (b*PI/180);
+    printf("The sine of %lf is %lf\n",b,s);
+}
+void cosine(){
+    double b;
+    printf("Enter the number you want the cosine of : ");
+    scanf("%lf",b);
+    double c = cos (b*PI/180);
+    printf("The cosine of %lf is %lf\n",b,c);
+}
+void tangent(){
+    double b;
+    printf("Enter the number you want the tangent of : ");
+    scanf("%lf",b);
+    double t = tan (b*PI/180);
+    printf("The tangent of %lf is %lf\n",b,t);
+}
+void sineh(){
+    double b;
+    printf("Enter the number you want the sineh of : ");
+    scanf("%lf",b);
+    double s = sinh(b);
+    printf("The sineh of %lf is %lf\n",b,s);
+}
+void cosineh(){
+    double b;
+    printf("Enter the number you want the cosineh of : ");
+    scanf("%lf",b);
+    double c = cosh(b);
+    printf("The cosineh of %lf is %lf\n",b,c);
+}
+void tangenth(){
+    double b;
+    printf("Enter the number you want the tangenth of : ");
+    scanf("%lf",b);
+    double t = tanh(b);
+    printf("The tangenth of %lf is %lf\n",b,t);
 }
