@@ -22,11 +22,26 @@ void tangent();
 void sineh();
 void cosineh();
 void tangenth();
+void arc_sine();
+void arc_cosine();
+void arc_tangenth();
 
 int main(){
-    printf("\t\tWelcome to the scientific calculator!!\n\n");
+    int i;
+
+    for(i=1;i<100;i++){
+        printf("*");
+    }
+    
+    printf("\n\t\t\tWelcome to the scientific calculator!!\n");
+
+    for(i=1;i<100;i++){
+        printf("*");
+    }
+    printf("\n");
+
     int choice;
-    printf("\n******* Press 0 to quit the program ********\n");
+    printf("\nPress 0 to quit the program \n");
     printf("Enter 1 for Addition \n");
     printf("Enter 2 for Subtraction \n");
     printf("Enter 3 for Multiplication \n");
@@ -44,7 +59,14 @@ int main(){
     printf("Enter 15 for Tangent \n");
     printf("Enter 16 for Sineh \n");
     printf("Enter 17 for Cosineh \n");
-    printf("Enter 18 for Tangenth \n\n");
+    printf("Enter 18 for Tangenth \n");
+    printf("Enter 19 for Sine inverse \n");
+    printf("Enter 20 for Cosine inverse \n");
+    printf("Enter 21 for Tangenth inverse \n\n");
+
+    for(i=1;i<100;i++){
+        printf("*");
+    }
     
     while(1){    
     printf("\n\nEnter the operation you want to do: ");
@@ -106,6 +128,15 @@ int main(){
                     break;
                 case 18:
                     tangenth();
+                    break;
+                case 19:
+                    arc_sine();
+                    break;
+                case 20:
+                    arc_cosine();
+                    break;
+                case 21:
+                    arc_tangenth();
                     break;
                 case 0:
                     exit(0);
@@ -241,4 +272,31 @@ void tangenth(){
     scanf("%lf",b);
     double t = tanh(b);
     printf("The tangenth of %lf is %lf\n",b,t);
+}
+void arc_sine(){
+    double b;
+    printf("Enter the number you want the sine inverse of : ");
+    scanf("%lf",b);
+    double as = asin(b);
+    printf("Inverse of sin(%lf) = %lf in radians\n",b,as);
+    as = asin(b)*180/PI;
+    printf("Inverse of sin(%lf) = %lf in degrees\n",b,as);
+}
+void arc_cosine(){
+    double b;
+    printf("Enter the number you want the cosine inverse of : ");
+    scanf("%lf",b);
+    double ac = acos(b);
+    printf("Inverse of cos(%lf) = %lf in radians\n",b,ac);
+    ac = acos(b)*180/PI;
+    printf("Inverse of cos(%lf) = %lf in degrees\n",b,ac);
+}
+void arc_tangenth(){
+    double b;
+    printf("Enter the number you want the tangenth inverse of : ");
+    scanf("%lf",b);
+    double at = atan(b);
+    printf("Inverse of tan(%lf) = %lf in radians\n",b,at);
+    at = atan(b)*180/PI;
+    printf("Inverse of tan(%lf) = %lf in degrees\n",b,at);
 }
