@@ -149,38 +149,38 @@ int main(){
 }
 
 void addition(){
-    printf("Enter the numbers you want to add: ");
+    printf("\nEnter the numbers you want to add: ");
     int a,b;
     scanf("%d%d",&a,&b);
     printf("The sum of %d and %d is %d\n",a,b,a+b);
 }
 void subtraction(){
-    printf("Enter the numbers you want to subtract: ");
+    printf("\nEnter the numbers you want to subtract: ");
     int a,b;
     scanf("%d%d",&a,&b);
     printf("The subtraction of %d and %d is %d\n",a,b,a-b);
 }
 void multiplication(){
-    printf("Enter the numbers you want to multiply: ");
+    printf("\nEnter the numbers you want to multiply: ");
     int a,b;
     scanf("%d%d",&a,&b);
     printf("The multiplication of %d and %d is %d\n",a,b,a*b);
 }
 void division(){
-    printf("Enter the numbers you want to divide: ");
+    printf("\nEnter the numbers you want to divide: ");
     int a,b;
     scanf("%d%d",&a,&b);
     printf("The division of %d and %d is %f\n",a,b,(float)a/(float)b);
 }
 void modulus(){
-    printf("Enter the numbers you want to find modulus of: ");
+    printf("\nEnter the numbers you want to find modulus of: ");
     int a,b;
     scanf("%d%d",&a,&b);
     printf("The modulus of %d and %d is %d\n",a,b,a%b);
 }
 void factorial(){
     int n,factorial;
-    printf("Enter the number you want the factorial of: ");
+    printf("\nEnter the number you want the factorial of: ");
     scanf("%d",&n);
     factorial=1;
     for(int i=1;i<=n;i++){
@@ -191,92 +191,92 @@ void factorial(){
 void power(){
     double b;
     double p;
-    printf("Enter the base and the power: ");
+    printf("\nEnter the base and the power: ");
     scanf("%lf%lf",&b,&p);
     double e=pow(b,p);
     printf("The power is %lf",e);
 }
 void square(){
     double b;
-    printf("Enter the number you want the square of: ");
+    printf("\nEnter the number you want the square of: ");
     scanf("%lf",&b);
     double p=pow(b,2);
     printf("The square of %lf is %lf",b,p);
 }
 void cube(){
     double b;
-    printf("Enter the number you want the cube of: ");
+    printf("\nEnter the number you want the cube of: ");
     scanf("%lf",&b);
     double p=pow(b,3);
     printf("The cube of %lf is %lf",b,p);
 }
 void squareroot(){
     double b;
-    printf("Enter the number you want the square root of : ");
+    printf("\nEnter the number you want the square root of : ");
     scanf("%lf",&b);
     double s = sqrt(b);
     printf("The square root of %lf is %lf",b,s);
 }
 void logarithm(){
     double b;
-    printf("Enter the number you want the natural logarithm (base = e) of : ");
+    printf("\nEnter the number you want the natural logarithm (base = e) of : ");
     scanf("%lf", &b);
     double l = log(b);
     printf("The natural log of %lf is %lf\n",b,l);
 }
 void log_base_10(){
     double b;
-    printf("Enter the number you want the log base 10 of : ");
+    printf("\nEnter the number you want the log base 10 of : ");
     scanf("%lf",&b);
     double l = log10(b);
     printf("The logarithm base 10 of %lf is %lf\n",b,l);
 }
 void sine(){
     double b;
-    printf("Enter the number you want the sine of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the sine of : ");
+    scanf("%lf",&b);
     double s = sin (b*PI/180);
     printf("The sine of %lf is %lf\n",b,s);
 }
 void cosine(){
     double b;
-    printf("Enter the number you want the cosine of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the cosine of : ");
+    scanf("%lf",&b);
     double c = cos (b*PI/180);
     printf("The cosine of %lf is %lf\n",b,c);
 }
 void tangent(){
     double b;
-    printf("Enter the number you want the tangent of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the tangent of : ");
+    scanf("%lf",&b);
     double t = tan (b*PI/180);
     printf("The tangent of %lf is %lf\n",b,t);
 }
 void sineh(){
     double b;
-    printf("Enter the number you want the sineh of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the sineh of : ");
+    scanf("%lf",&b);
     double s = sinh(b);
     printf("The sineh of %lf is %lf\n",b,s);
 }
 void cosineh(){
     double b;
-    printf("Enter the number you want the cosineh of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the cosineh of : ");
+    scanf("%lf",&b);
     double c = cosh(b);
     printf("The cosineh of %lf is %lf\n",b,c);
 }
 void tangenth(){
     double b;
-    printf("Enter the number you want the tangenth of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the tangenth of : ");
+    scanf("%lf",&b);
     double t = tanh(b);
     printf("The tangenth of %lf is %lf\n",b,t);
 }
 void arc_sine(){
     double b;
-    printf("Enter the number you want the sine inverse of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the sine inverse of : ");
+    scanf("%lf",&b);
     double as = asin(b);
     printf("Inverse of sin(%lf) = %lf in radians\n",b,as);
     as = asin(b)*180/PI;
@@ -284,8 +284,8 @@ void arc_sine(){
 }
 void arc_cosine(){
     double b;
-    printf("Enter the number you want the cosine inverse of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the cosine inverse of : ");
+    scanf("%lf",&b);
     double ac = acos(b);
     printf("Inverse of cos(%lf) = %lf in radians\n",b,ac);
     ac = acos(b)*180/PI;
@@ -293,8 +293,8 @@ void arc_cosine(){
 }
 void arc_tangenth(){
     double b;
-    printf("Enter the number you want the tangenth inverse of : ");
-    scanf("%lf",b);
+    printf("\nEnter the number you want the tangenth inverse of : ");
+    scanf("%lf",&b);
     double at = atan(b);
     printf("Inverse of tan(%lf) = %lf in radians\n",b,at);
     at = atan(b)*180/PI;
